@@ -1,0 +1,32 @@
+:root {
+  --start: rgba(110, 136, 255, 0.5);
+  --end: rgba(110, 136, 255, 0.1);
+  --padding: 50px;
+}
+.App {
+  /* margin-top: 10em; */
+  background: linear-gradient(
+      180deg,
+      var(--start) 0,
+      var(--end) var(--padding),
+      transparent var(--padding),
+      transparent calc(100% - var(--padding)),
+      var(--end) calc(100% - var(--padding)),
+      var(--start) 100%
+    ),
+    linear-gradient(
+      90deg,
+      var(--start) 0,
+      var(--end) var(--padding),
+      transparent var(--padding),
+      transparent calc(100% - var(--padding)),
+      var(--end) calc(100% - var(--padding)),
+      var(--start) 100%
+    );
+  font-family: sans-serif;
+}
+body {
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
